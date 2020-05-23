@@ -1,0 +1,102 @@
+/* Seletor Universal */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* somar */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background-color: #E23E57;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  /* margin: em cima, direita, embaixo, esquerda */
+  /* margin: em cima E embaixo, direita E esquerda */
+  /* margin: todos os lados! */
+  margin: auto 0;
+   
+  font-weight: bold;
+  color: #88304E;
+  font-size: 96px;
+  padding: 50px 0;
+  user-select: none;
+}
+
+header span.time {
+  color: #522546;
+}
+
+main {
+  border-top: 3px solid #88304E;
+  width: 500px;
+  height: 250px;
+  overflow: auto;
+}
+
+main div.time-line {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main div.time-line p.time-id {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+main div.time-line p.time-add {
+  font-size: 21px;
+}
+
+footer { 
+  margin-top: auto;
+  width: 100%;
+  background: #311D3F;
+}
+
+footer button.btn {
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  color: #F85F73;
+  text-transform: uppercase;
+  
+  padding: 15px 0;
+  background: #311D3F;
+  border: none;
+
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.5s;
+}
+
+footer button.btn.continue {
+  color: #5FD62F;
+}
+
+footer button.btn:hover,
+footer button.btn:active {
+  background: #522546;
+}
+
+footer div.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer div.btn-container.hide,
+.hide {
+  display: none;
+}
